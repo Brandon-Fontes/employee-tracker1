@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from '../image/logo.png';
+import { Link } from "react-router-dom";
 
 class HeaderComponent extends Component {
   constructor(props) {
@@ -15,9 +16,9 @@ class HeaderComponent extends Component {
           <nav className="navbar navbar-expand-md navbar-light bg-light">
             <img src={logo} alt="Logo" />;
             <ul style = {{ float: 'left',}}>
-           <li style = {{ float: 'left',}}><a href="/employees">Home</a></li>
-            <li style = {{ float: 'left',}} ><a href="/employees">Employees</a></li>
-            <li  style = {{ float: 'left',}}><a href="/salaries">Salary</a></li>
+           <li style = {{ float: 'left',}}><Link to="/employees">Home</Link></li>
+            <li style = {{ float: 'left',}} ><Link to="/employees" >Employees</Link></li>
+            <li  style = {{ float: 'left',}}><Link to="/salaries">Salary</Link></li>
             </ul>
           </nav>
         </header>
